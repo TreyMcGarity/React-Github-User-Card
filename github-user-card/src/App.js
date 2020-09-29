@@ -48,7 +48,7 @@ class App extends React.Component {
             <div>
             <p>Bio:{this.state.user.bio}</p>
             <p>Location:{this.state.user.location}</p>
-            <p>Followers:{this.state.followers.map(follower => ( follower.login))}</p>
+            <p>Followers:{this.state.followers.map(follower => (follower.login)).join(", ")}</p>
             </div>
         </div>
       </div>
